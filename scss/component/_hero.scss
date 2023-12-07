@@ -1,0 +1,17 @@
+#hero{
+    margin-top: 100px;
+}
+.hero{
+    &__wrap{
+        width: 600px;
+    }
+    &__title{
+        font-family: $font-open-sans;
+        font-size: 50px;
+        font-variation-settings: 'wght' 100, 'wdth' 85;
+        
+    }
+    &__linked{
+        display: none;
+    }
+}

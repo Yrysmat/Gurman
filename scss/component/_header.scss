@@ -1,0 +1,57 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__img{
+        width: 48px;
+        height: 48px;
+    }
+    &__button{
+        padding: 15px;
+        border: 2px solid $header-btn-border;
+        border-radius: 15px;
+            transition: all 0.2s ease;
+            background: $white-color;
+            color: $black-color;
+        &:hover{
+            transition: all 0.2s ease;
+            background: $header-btn-border;
+            color: $white-color;
+        }
+    }
+    &__link{
+        margin: 0 10px;
+        color: $black-color;
+    }
+    &__btn{
+    // margin-left: 20px;
+      width: 24px;
+      height: 24px;
+      position: relative;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      &-sun {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+      }
+      &-moon  {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+      }
+    }
+}
+.sun{
+    display: block;
+}
+.moon{
+    display: none;
+}

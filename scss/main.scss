@@ -1,0 +1,29 @@
+@import './mixin/var';
+@import './mixin/font';
+@import './mixin/mixin';
+@import './component/header';
+@import './component/hero';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+body{
+    &.dark-theme{
+        color: $dark-theme-color-white;
+        background: $dark-theme-color;
+        
+    }&.dark-theme a{
+        
+        color: $dark-theme-color-white;
+    }
+}
