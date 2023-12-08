@@ -1,7 +1,17 @@
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 .header{
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
     &__img{
         width: 48px;
         height: 48px;
