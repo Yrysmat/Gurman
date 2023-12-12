@@ -1,13 +1,28 @@
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+}
+
 .header {
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.5s ease;
 }
 .header__img {
   width: 48px;
   height: 48px;
 }
+.header_fixed {
+  transition: all 0.5s ease;
+  background: green !important;
+}
 .header__button {
+  cursor: pointer;
   padding: 15px;
   border: 2px solid #73354a;
   border-radius: 15px;
@@ -22,7 +37,7 @@
 }
 .header__link {
   margin: 0 10px;
-  color: #000;
+  color: #fff;
 }
 .header__btn {
   width: 24px;
@@ -48,6 +63,19 @@
   width: 24px;
   height: 24px;
 }
+.header__whatsapp {
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  right: 50px;
+  z-index: -1;
+}
+.header__whatsapp-img {
+  width: 30px;
+  height: 30px;
+  background-image: none;
+  background: transparent;
+}
 
 .sun {
   display: block;
@@ -58,19 +86,78 @@
 }
 
 #hero {
-  margin-top: 100px;
+  height: 100vh;
+  margin-bottom: 100px;
+  background: url(../../img/herobg.jpg) no-repeat center/cover;
 }
 
+.hero {
+  padding-top: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero__wrap {
   width: 600px;
 }
 .hero__title {
+  padding-top: 107px;
+  padding-left: 70px;
   font-family: OpenSans, sans-serif;
-  font-size: 50px;
-  font-variation-settings: "wght" 100, "wdth" 85;
+  font-size: 100px;
+  font-weight: 200;
 }
 .hero__linked {
   display: none;
+}
+
+.menu {
+  margin-top: 100px;
+}
+.menu__title {
+  font-size: 55px;
+  margin-left: 500px;
+  font-family: OpenSans, sans-serif;
+  font-weight: 500;
+}
+.menu__food {
+  position: relative;
+  border: 2px solid #73354a;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+}
+.menu__food-pizza {
+  position: relative;
+  width: 180px;
+  height: 125px;
+  top: 20px;
+  left: 10px;
+}
+.menu__subtitle {
+  font-family: OpenSans, sans-serif;
+  font-weight: 500;
+  position: relative;
+  top: 20px;
+  left: 55px;
+}
+.menu__sell {
+  font-family: OpenSans, sans-serif;
+  font-weight: normal;
+  margin: 20px 0 0 30px;
+}
+.menu__btn {
+  margin: 20px 0 0 57px;
+  border: 2px solid #73354a;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background: #fff;
+}
+.menu__btn:hover {
+  transition: all 0.3s ease;
+  background: #73354a;
+  color: #fff;
 }
 
 * {
