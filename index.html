@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurman</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -14,18 +14,22 @@
                 <div class="header__wrap">
                     <img src="./img/logo (1).png" alt="" class="header__img">
                 </div>
-                <div class="header__wrapper">
-                <a href="" class="header__link">каталог</a>
+                <nav class="header__wrapper">
+                <a href="./katalog.html" class="header__link">каталог</a>
                 <a href="" class="header__link">Про нас</a>
                 <a href="" class="header__link">каталог</a>
+                <a href="" class="header__link">Главная</a>
                 <a href="" class="header__link">каталог</a>
-                <a href="" class="header__link">каталог</a>
-                <button class="header__button">Связаться с нами</button>
+                <button  class="header__button">Связаться с нами
+                <button onclick="window.location.href ='https://wa.me/+996776678590'" class="header__whatsapp"><img class="header__whatsapp-img" src="./img/whatsapp.png" alt=""></button>
+                </button>
+                <button onclick="window.location.href ='https://t.me/+996776678590'" class="header__telegram"><img class="header__telegram-img" src="./img/telegram.png" alt=""></button>
+                </button>
                 <button class="header__btn">
                     <img class="header__btn-sun sun" src="./img/sun.png" alt="">
                     <img class="header__btn-moon moon" src="./img/moon.png" alt="">
                 </button>
-            </div>
+            </nav>
             </div>
         </div>
     </header>
@@ -36,12 +40,49 @@
                     
                 </div>
                 <div class="hero__wrap">
-                    <h1 class="hero__title">Попробуйте нашу вкусную еду</h1>
+                    <h1 class="hero__title">Gurman</h1>
+                    <h3 class="hero__subtitle">Попробуйте вкуснейшего узбекского плова</h3>
                 </div>
-                <div class="hero__wrapper"></div>
+                <div class="hero__wrapper">
+                    
+                </div>
             </div>
         </div>
     </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__wrapper">
+                    <a href="">
+                        <img class="footer__logo" src="./img/logo (1).png" alt="">
+                    </a>
+                    <p class="footer__text"><span class="footer__text-span">Gurman</span> Это недавно открывшийся интернет магазин плова в Кара-куле. У нас вы можете заказать пловы,напитки,и другие блюда. <br> А главное то что у нас бесплатное доставка до вашего дома</p>
+                </div>
+                <div class="footer__wraps">
+                    <h3 class="footer__headline"></h3>
+                    
+
+
+                </div>
+                <div class="footer__wrap">
+                    <div class=""><h3 class="footer__title">Наши номера</h3>
+                    <h3 class="footer__number">+996 777 77 77 77</h3>
+                    <h3 class="footer__number">+996 777 77 77 77</h3></div>
+                    <div class=""><h3 class="footer__title">Наши сот-сети</h3>
+                    <a href="https://wa.me/+996776678590" class="footer__link">
+                        <img class="footer__img" src="./img/whatsapp.png" alt="">
+                    </a>
+                    <a href="" class="footer__link">
+                        <img class="footer__img" src="./img/telegram.png" alt="">
+                    </a>
+                    <p class="footer__text">Пн - Сб: 9:00 - 19:00
+                       <br> Вс: выходной</p></div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
