@@ -1,12 +1,28 @@
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+
 .header{
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.5s ease;
     &__img{
-        width: 48px;
-        height: 48px;
+        width: 68px;
+        height: 68px;
+        cursor: pointer;
+    }
+    &_fixed{
+        // color: gray;
+    transition: all 0.5s ease;
     }
     &__button{
+        cursor: pointer;
         padding: 15px;
         border: 2px solid $header-btn-border;
         border-radius: 15px;
@@ -21,7 +37,7 @@
     }
     &__link{
         margin: 0 10px;
-        color: $black-color;
+        color: $header-btn-border;
     }
     &__btn{
     // margin-left: 20px;
@@ -30,6 +46,7 @@
       position: relative;
       border: none;
       background: transparent;
+      right: 50px;
       cursor: pointer;
       &-sun {
         position: absolute;
@@ -48,10 +65,48 @@
         height: 24px;
       }
     }
+    &__whatsapp{
+        cursor: pointer;
+        position: relative;
+        top: 10px;
+        right: 50px;
+        z-index: -1;
+        background: transparent;
+        border: 1px solid transparent;
+        &-img{
+
+            width: 30px;
+            height: 30px;
+            background-image: none;
+            background: transparent;
+        }
+        transition: all 0.3s ease;
+    }
+    &__telegram{
+        cursor: pointer;
+        position: relative;
+        top: 10px;
+        right: 150px;
+        z-index: -1;
+        background: transparent;
+        border: 1px solid transparent;
+        &-img{
+            width: 30px;
+            height: 30px;
+            background-image: none;
+            background: transparent;
+        }
+        transition: all 0.3s ease;
+
+    }
 }
 .sun{
     display: block;
 }
 .moon{
     display: none;
+}
+.active{
+    transition: all 0.3s ease;
+    transform: translateY(50px);
 }
