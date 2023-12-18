@@ -1,0 +1,134 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    &__title {
+        position: relative;
+        font-size: 55px;
+        // left: 500px;
+        // margin-left: 500px;
+        font-family:$font-open-sans  ;
+        font-weight: 500;
+    }
+    
+    &__food{
+        position: relative;
+        border: 1px solid $header-btn-border;
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+        margin: 0 10px;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        &-pizza{
+            position: relative;
+            width: 180px;
+            height: 125px;
+            top: 20px;
+            left: 10px;
+        }
+    }
+    &__subtitle{
+        font-family:$font-open-sans  ;
+        font-weight: 500;
+        position: relative;
+        top: 20px;
+        left: 55px;
+    }
+    &__sell{
+        font-family: $font-open-sans;
+        // margin-left: 20px;
+        position: relative;
+        font-weight: 500;
+        left: 40px;
+        top: 20px;
+    }
+    &__btn{
+        margin: 30px 0 0 57px;
+        border: 2px solid $header-btn-border;
+        transition: all 0.3s ease;
+        padding: 10px 15px;
+        border-radius: 20px;
+        background: $white-color;
+        &:hover{
+        transition: all 0.3s ease;
+        background: $header-btn-border;
+        color: $white-color;
+        }
+    }
+    &__wrapper{
+        position: relative;
+        left: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin-bottom: 2000px;
+        width: 1000px;
+    }
+}
+.plov , .drink,.mantu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    &__title {
+        position: relative;
+        font-size: 55px;
+        // left: 500px;
+        // margin-left: 500px;
+        font-family:$font-open-sans  ;
+        font-weight: 500;
+    }
+    
+    &__food{
+        position: relative;
+        border: 1px solid $header-btn-border;
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+        margin: 0 10px;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        &-pizza{
+            position: relative;
+            width: 180px;
+            height: 125px;
+            top: 20px;
+            left: 10px;
+        }
+    }
+    &__subtitle{
+        font-family:$font-open-sans  ;
+        font-weight: 500;
+        position: relative;
+        top: 20px;
+        left: 55px;
+    }
+    &__sell{
+        font-family: $font-open-sans;
+        // margin-left: 20px;
+        position: relative;
+        font-weight: 500;
+        left: 40px;
+        top: 20px;
+    }
+    &__btn{
+        margin: 30px 0 0 57px;
+        border: 2px solid $header-btn-border;
+        transition: all 0.3s ease;
+        padding: 10px 15px;
+        border-radius: 20px;
+        background: $white-color;
+        &:hover{
+        transition: all 0.3s ease;
+        background: $header-btn-border;
+        color: $white-color;
+        }
+    }
+    &__wrapper{
+        position: relative;
+        left: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin-bottom: 2000px;
+        width: 1000px;
+    }
+}

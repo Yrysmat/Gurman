@@ -3,6 +3,11 @@
 @import './mixin/mixin';
 @import './component/header';
 @import './component/hero';
+@import './component/menu';
+@import './component/nav';
+@import'./component/food';
+@import './component/linkings';
+@import './component/footer';
 
 *{
     box-sizing: border-box;
@@ -26,4 +31,11 @@ body{
         
         color: $dark-theme-color-white;
     }
+    &.dark-theme .actived{
+        
+        background: #121212;
+    }
+}
+.footercontaned{
+    position: relative;
 }
